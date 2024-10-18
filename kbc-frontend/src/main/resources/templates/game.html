@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>KBC Game</title>
+</head>
+<body>
+<h1>KBC Game</h1>
+<div>
+<h2 th:text="${questions[0].questionText}"></h2>
+<form id="answerForm">
+<input type="text" id="playerName" placeholder="Enter your name">
+<input type="text" id="answer" placeholder="Enter your answer">
+<button type="button" onclick="submitAnswer()">Submit Answer</button>
+</form>
+</div>
+<div id="result"></div>
+<script src="/js/script.js"></script>
+</body>
+</html>
